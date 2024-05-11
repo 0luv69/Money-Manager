@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Money Manager App Documentation</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Money Manager App Documentation</h1>
+    </header>
+
+    <section id="introduction" class="zoomable">
+        <h2>Introduction</h2>
+        <p>
+            The Money Manager app is a Python-based application designed to help users efficiently manage their
+            finances. It provides a user-friendly interface with features for handling transactions related to different
+            financial elements, tracking loans, and maintaining a transaction history.
+        </p>
+        <!-- Add image here -->
+    </section>
+
+    <section id="technologies-used" class="zoomable">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Programming Language: Python</li>
+            <li>User Interface (UI) Libraries: Tkinter, Customtkinter, tkcalendar</li>
+            <li>Data Handling Libraries: time, datetime, math, timedelta, calendar, os, openpyxl, configparser</li>
+        </ul>
+        <!-- Add image here -->
+    </section>
+
+    <section id="getting-started" class="zoomable">
+        <h2>Getting Started</h2>
+        <h3>Installation</h3>
+        <p>
+            Ensure that you have Python installed on your system. Clone or download the Money Manager app repository
+            from <a href="https://github.com/your-money-manager-repo">GitHub</a> and run the main Python script.
+        </p>
+        <!-- Add image here -->
+    </section>
+
+    <section id="functionality">
+        <h2>Functionality</h2>
+
+        <section id="initial-configuration" class="zoomable">
+            <h3>Initial Configuration Page</h3>
+            <p>
+                Welcomes new users and gathers initial information.
+            </p>
+            <p>
+                Input: File location, user name, and the number of financial elements to manage money.
+            </p>
+            <p>
+                Output: User is redirected to the main page.
+            </p>
+            <!-- Add image here -->
+        </section>
+
+        <section id="main-page" class="zoomable">
+            <h3>Main Page</h3>
+            <p>
+                Options:
+            </p>
+            <ul>
+                <li>User can select a financial element for transactions.</li>
+                <li>Options for Loan and Check transactions are available.</li>
+            </ul>
+            <!-- Add image here -->
+        </section>
+
+        <section id="element-transaction" class="zoomable">
+            <h3>Element Transaction</h3>
+            <p>
+                For Each Element (e.g., "Handcash"):
+            </p>
+            <ul>
+                <li>Interface: Separate tabs for tracking income and expenses.</li>
+                <li>Details: Reason, amount, and keywords for each transaction.</li>
+                <li>Storage: Data is stored in an XML sheet named after the transaction element and the present date.
+                </li>
+            </ul>
+            <!-- Add image here -->
+        </section>
+
+        <section id="loan-transaction" class="zoomable">
+            <h3>Loan Transaction</h3>
+            <p>
+                Loan Features:
+            </p>
+            <ul>
+                <li>Tabs: Loan Give and Loan Take.</li>
+                <li>Common Interface Elements:</li>
+                <ol>
+                    <li>Due date selector (default: present date + 30 days).</li>
+                    <li>Toggle button for Normal or Paying Back transactions.</li>
+                    <li>Entry fields for reason and amount.</li>
+                    <li>Selector box for choosing or adding a new tangent name.</li>
+                    <li>Options to send the transaction or revert.</li>
+                </ol>
+            </ul>
+            <!-- Add image here -->
+        </section>
+
+        <section id="check-page" class="zoomable">
+            <h3>Check Page</h3>
+            <p>
+                Overview:
+            </p>
+            <ul>
+                <li>Displays a list of all transaction elements with total amounts.</li>
+                <li>Provides a button to check loan transactions.</li>
+                <li>Filter options for selecting the date range and transaction element.</li>
+            </ul>
+            <!-- Add image here -->
+        </section>
+
+        <section id="loan-transaction-history" class="zoomable">
+            <h3>Loan Transaction History Page</h3>
+            <p>
+                Loan Overview:
+            </p>
+            <ul>
+                <li>Displays a list of all tangents with total amounts left to pay and left to take.</li>
+                <li>History view with options to select different time periods.</li>
+                <li>Sorting options based on all transactions, loan given, loan taken, and due date crossed.</li>
+                <li>Filter options for date range and sorting.</li>
+            </ul>
+            <!-- Add image here -->
+        </section>
+
+    </section>
+
+    <section id="conclusion" class="zoomable">
+        <h2>Conclusion</h2>
+        <p>
+            The Money Manager app provides a comprehensive solution for managing finances, tracking loans, and reviewing
+            transaction history. Its intuitive user interface and robust features make it a reliable tool for personal
+            finance management.
+        </p>
+        <!-- Add image here -->
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
