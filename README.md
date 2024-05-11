@@ -1,3 +1,29 @@
+# Money Manager App
+
+## Introduction
+
+The Money Manager app simplifies finance management through an intuitive Python-based application. It offers a user-friendly interface and robust features for handling transactions, tracking loans, and maintaining a transaction history.
+
+## Technologies Used
+
+- Programming Language: Python
+- User Interface (UI) Libraries: Tkinter, Customtkinter, tkcalendar
+- Data Handling Libraries: time, datetime, math, timedelta, calendar, os, openpyxl, configparser
+
+## Getting Started
+
+### Installation
+
+Ensure Python is installed. Clone/download the Money Manager app from GitHub and run the `main.py`.
+
+First Clone the Repo
+
+And Run:
+
+```bash
+python main.py
+```
+
 # Functionality
 
 ## Initial Configuration Page
