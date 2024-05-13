@@ -34,7 +34,7 @@ Users can install the Money Manager app by following these steps:
   - Loan Transaction: Select Loan Button for Getting into Loan Segment.
   - Check Transaction History: Select Check transaction options To view History of your transaction.
   - Saving the Transaction:
-    - Data stored in XML sheet named after the transaction element and present date. Where inside page sheet includes columns for [SN, Date, Keywords, Reason, Income, Expenses].
+     - Data stored in XML sheet named after the transaction element and present date. Where inside page sheet includes columns for [SN, Date, Keywords, Reason, Income, Expenses ].
 
 #### Element Transaction Section/Page
 - Tabs: Separate Menu tabs for income [+] and expenses [-].
