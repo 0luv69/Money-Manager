@@ -2376,7 +2376,7 @@ class CommandLIne():
                 #amt
                 while True:    
                     try:
-                        money = float(input("\nEnter the money [to give +, to take -]:\tRs. "))
+                        money = float(input("\nEnter the money [to give -, to take +]:\tRs. "))
                         break
                     except:    
                         print("Sorry you have to enter money in number, Try again")
@@ -2433,9 +2433,9 @@ class CommandLIne():
                 
         for each_trans in L_t_deatils:
             if float(each_trans[2]) >=0:
-                Give_trans.append({"Due_date":each_trans[3],"Tangent_Name":[each_trans[0]],"source_reason":each_trans[1],"amount":float(each_trans[2]),"deposit_normal":each_trans[4]})
-            else:
                 Take_trans.append({"Due_date":each_trans[3],"Tangent_Name":[each_trans[0]],"source_reason":each_trans[1],"amount":float(each_trans[2]),"deposit_normal":each_trans[4]})
+            else:
+                Give_trans.append({"Due_date":each_trans[3],"Tangent_Name":[each_trans[0]],"source_reason":each_trans[1],"amount":float(each_trans[2]),"deposit_normal":each_trans[4]})
         if Take_trans:        
             Transaction_book_calculator(Take_trans,"Loan","Take","Loan",)
         if Give_trans:
