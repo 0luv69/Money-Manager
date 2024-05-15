@@ -65,19 +65,68 @@ Users can install the Money Manager app by following these steps:
 
 
 ## Check Page
-### Overview
-- Displays list of all transaction elements with total amounts.
-- Provides button to check loan transactions.
-- Filter options for date range and transaction element.
+  ### > Upper section: (Transaction Summary List)
+    - Displays a list of all transaction elements along with their total amounts.
+    - Provides a button to navigate to the Loan Transaction History Page for checking loan transactions.
+    - Loan Transaction History Page
 
-## Loan Transaction History Page
+  ### > Lower Section: (Detailed Transaction History)
+    - Displays a detailed history of each transaction element upon selection.
+    - Offers the ability to select a time period (e.g., 30, 60, or 90 days) for viewing transaction history.
+    - Provides filter options for specifying date range and transaction element.
 
-### Loan Overview
-- Lists all tangents with total amounts left to pay and take.
-- History view with time period selection.
-- Sorting options based on transaction types and due dates.
-- Filter options for date range and sorting.
+## Loan Overview page: 
+  ### > Upper Section: (Tangents Summary List)
+    - Lists all tangents with their corresponding total amounts left to pay and take.
+  ### > Lower Section: (Detailed Tangents Transaction History)
+    - Presents a detailed transaction history for tangents, including selection of time periods.
+    - Offers sorting options based on transaction types and due dates.
+    - Provides filter options for specifying date range and sorting criteria.
 
+# Getting started with Command line Factor
+
+## Run the Application
+```bash
+python main.py
+```
+
+1. **Welcome Message:** You'll see a welcome message and a numbered list of options representing your financial elements (e.g., Hand Cash, Bank Account Element name) With Loan & Check money Option.
+
+2. **Choose an Option:** Type the number corresponding to the element you want to manage and press Enter. This could be:
+   - for managing transactions related to your Element.
+   - for managing transactions related to your Loan.
+   - for Checking the transaction history.
+
+3. **Entering Details:** The program will prompt you for details like:
+   - Reason: Briefly describe the purpose of the transaction. Note: Typing "ed" allows you to remove the last entered transaction in the reason field.
+   - Amount: Enter the amount of money involved (Note: positive for income, negative for expenses).
+   - Keywords: Add keywords by using the ‘add’ word, or select any one keyword according to the keywords needed also for multiple selections use 1,2,3 Note: select at least 2 keywords like (2,3)).
+   - End after adding Multiple Transactions: You can keep entering transactions one after another. When finished, type "end" and press Enter.
+
+4. **Loan Management:** Choose the "Loan" option from the main menu to manage borrowed and lent money. Here you can do:
+   - Add reason
+   - Amount: - for given & + for Taken loan
+   - Tangent: can select only one Tangent with the index number of a particular box like 2 for the second number tangent, to ADD type ‘add’.
+   - Due date: just press Enter if it's for 30 days, or type a new date in the format of Year-month-date.
+   - Transaction type: N for normal, or D for if deposited money. [Normal/Deposit]
+     - Normal: This transaction type is used for regular loan transactions, where money is either borrowed or lent without any additional considerations.
+     - Deposit: Use this when money is being paid back on a loan, either way. Think of it as "adding money back" to the loan pool.
+
+   **Why to use opposite menu tab, while payback?**
+   - [-]: In the Given tab, money is subtracted from the total when lending money. When we return our money, it gets deducted, hence we record our Taken transaction in the Given tab using the Deposit toggle.
+   - [+]: In the Taken tab, money is added to the total when receiving repayment for loans. When we get back our money, it gets added, so we record our Given transaction in the Taken tab using the Deposit toggle.
+     - Send or revert transactions for editing or correction.
+
+   **Examples:**
+   - Paying Back Money You Borrowed: Use "Deposit" to record when you return the borrowed money in Given Menu Tab [-].
+   - Getting Paid Back Money You Lent: Use "Deposit" when someone repays a loan you gave them in Taken Menu Tab [+].
+
+5. **Checking Money:** Select the "Check Money" option to view your overall financial status. This displays summaries of your income, expenses, and loan balances.
+
+6. **Exiting the Program:** When finished, press Enter at the confirmation prompt to exit the command-line interface.
+
+Enjoy managing your finances with the Money Manager command line!
+
+    
 # Conclusion
-
 The Money Manager app offers a comprehensive solution for finance management, loan tracking, and transaction history review. Its user-friendly interface and robust features make it an essential tool for personal finance management.
