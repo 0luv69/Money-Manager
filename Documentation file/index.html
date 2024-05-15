@@ -1,151 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Money Manager App Documentation</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Money Manager App Documentation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    min-width: 370px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1{
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+  }
+  h2, h3, h4 {
+    color: #333;
+  }
+  .section {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 5px;
+  }
+  .container {
+    background-color: #c4c4c4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .container h3 {
+    margin-top: 0;
+    color: #171515;
+  }
+  .sub-container {
+    background-color: #eaeaea;
+    
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .sub-container h4 {
+    margin-top: 0;
+    color: #232222;
+  }
+
+  .inner_sub_head{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2e2828;
+  }
+
+  ul li{
+    margin: 8px 0;
+  }
+
+  ol li{
+    margin: 12px 0;
+    font-weight: 500;
+  }
+
+</style>
+</head>
 <body>
 
-    <header>
-        <h1>Money Manager App Documentation</h1>
-    </header>
+<div class="container">
+  <h1>Money Manager App Documentation</h1>
+  <div class="section Introduction">
+    <h3>Introduction</h3>
+    <p class="container" >The Money Manager app simplifies finance management through an intuitive Python-based application. It offers a user-friendly interface and robust features for handling transactions, tracking loans, and maintaining a transaction history.</p>
+  </div>
 
-    <section id="introduction" class="zoomable">
-        <h2>Introduction</h2>
-        <p>
-            The Money Manager app is a Python-based application designed to help users efficiently manage their
-            finances. It provides a user-friendly interface with features for handling transactions related to different
-            financial elements, tracking loans, and maintaining a transaction history.
-        </p>
-        <!-- Add image here -->
-    </section>
+  <div class="section Technologies">
+    <h3>Technologies Used</h3>
+    <div class="container">
+      <ul>
+        <li>Programming Language: Python</li>
+        <li>User Interface (UI) Libraries: Tkinter, Customtkinter, tkcalendar</li>
+        <li>Data Handling Libraries: time, datetime, math, timedelta, calendar, os, openpyxl, configparser</li>
+      </ul>
+    </div>
+  </div>
 
-    <section id="technologies-used" class="zoomable">
-        <h2>Technologies Used</h2>
-        <ul>
-            <li>Programming Language: Python</li>
-            <li>User Interface (UI) Libraries: Tkinter, Customtkinter, tkcalendar</li>
-            <li>Data Handling Libraries: time, datetime, math, timedelta, calendar, os, openpyxl, configparser</li>
+  <section id="getting-started" class="section">
+    <h2>Getting Started</h2>
+    <h3>Installation</h3>
+    <p>
+        Ensure that you have Python installed on your system. Clone or download the Money Manager app repository
+        from <a href="https://github.com/0luv69/Money-Manager"  target="_blank" >GitHub</a> and run the main Python script.
+    </p>
+    
+</section>
+
+  <div class="section Access">
+    <h3>Ways to Access Money Manager Application</h3>
+    <div class="container">
+      <h3>> GUI</h3>
+      <p> Graphical User Interface provides an interactive way to access and use the Money Manager application.</p>
+    </div>
+    <div class="container">
+      <h3>> Command Line</h3>
+      <p> Access the Money Manager application via the command line interface for quick and efficient management of finances.</p>
+    </div>
+  </div>
+
+  <div class="section GUI">
+    <h3>Getting Started With GUI</h3>
+    <div class="container Installation">
+      <h3>Installation</h3>
+      <p>Users can install the Money Manager app by following these steps:</p>
+      <ol>
+        <li>Ensure Python is installed on your system.</li>
+        <li>Clone or download the Money Manager app from GitHub.</li>
+        <li>Run the main.py file to launch the application.</li>
+      </ol>
+    </div>
+    <div class="container functionlity">
+      <h3>Functionlity: How things work In GUI</h3>
+      <ol>
+        <li class="sub-container Configuration">
+          <h3>Initial Configuration Page</h3>
+          <p>Welcomes new users and gathers essential information:</p>
+          <ul>
+            <li>File location to store data. (By default it selects the Document folder)</li>
+            <li>User name for Personalization.</li>
+            <li>Number of financial elements you want to track (e.g., Hand Cash, Businesses).</li>
+            <li>Redirects you to the main page after setup.</li>
+          </ul>
+        </li>
+    
+        <li class="sub-container Main_pg">
+          <h3>Main Page</h3>
+          <p class="inner_sub_head">Options To do:</p>
+          <ul>
+            <li><span class="inner_sub_head">Store Transaction History: </span> Select any financial element for Storing transactions History on a particular Element.</li>
+            <li><span class="inner_sub_head">Loan Transaction: </span> Select Loan Button for Getting into Loan Segment.</li>
+            <li><span class="inner_sub_head">Check Transaction History: </span> Select Check transaction options To view History of your transaction.</li>
+            <li><span class="inner_sub_head">Send the Transaction </span></li>
+          </ul>
+        </li>
+
+        <li class="sub-container Element_pg">
+          <h3>Element Transaction Section/Page</h3>
+          <ol>
+            <li><span class="inner_sub_head">Tabs:</span> Separate Menu tabs for income [+] and expenses [-].</li>
+            <li><span class="inner_sub_head">Input Details: </span>Capture reason, amount, and keywords for each transaction.</li>
+            <li><span class="inner_sub_head">Keywords:</span> To track the transaction later:</li>
+            <ul>
+              <li>Add, Create, or Delete keywords to categorize transactions as needed.</li>
+              <li>Needed To select at least 2 Keywords [one Element name and create another as transaction]</li>
+              <li>Built-in keywords represent the element itself (e.g., Hand Cash).</li>
+            </ul>
+            <li><span class="inner_sub_head">Send or Revert:</span> Send or Revert transactions for editing or correction.</li>
+          </ol>
+        </li>
+    
+        <li class="sub-container Loan_pg">
+          <h3>Loan Transaction Section/Page</h3>
+          <ol>
+            <li><span class="inner_sub_head">Tabs: </span> Separate Menu tabs for Loan to Give [-] and Loan to Take [+].</li>
+            <li><span class="inner_sub_head">Due-Date: </span> set the deadline to pay back the money [default 30 days],</li>
+            <li><span class="inner_sub_head">Transaction Type: </span> Toggle button between [Normal/Deposit]</li>
+            <ul>
+              <li><span class="inner_sub_head">Normal: </span> This transaction type is used for regular loan transactions, where money is either borrowed or lent without any additional considerations.</li>
+              <li><span class="inner_sub_head">Deposit: </span> Use this when money is being paid back on a loan, either way. Think of it as "adding money back" to the loan pool.</li>
+                  <p><h4> &nbsp;&nbsp;&nbsp; > Why to use opposite menu tab, while paying money back?</h4></p>
+                    <ul>
+                      <li><span class="inner_sub_head">[-]: In the Given tab, </span> money is subtracted from the total when lending money. When we return our money, it gets deducted, hence we record our Taken transaction in the Given tab using the Deposit toggle.</li>
+                      <li><span class="inner_sub_head">[+]: In the Taken tab, </span> money is added to the total when receiving repayment for loans. When we get back our money, it gets added, so we record our Given transaction in the Taken tab using the Deposit toggle.</li>
+                    </ul>
+                  <p><h4> &nbsp;&nbsp;&nbsp; > Examples:</h4></p>
+                  <ul>
+                    <li><span class="inner_sub_head">Paying Back Money You Borrowed: </span> Use "Deposit" to record when you return the borrowed money in Given Menu Tab [-].</li>
+                    <li><span class="inner_sub_head">Getting Paid Back Money You Lent: </span> Use "Deposit" when someone repays a loan you gave them in Taken Menu Tab [+].</li>
+                  </ul>
+                </ul>  
+            
+
+            <li><span class="inner_sub_head">Input Details: </span> Capture reason, amount, Tangent Name, Due-Date, Transaction Type;</li>
+
+            <li><span class="inner_sub_head">Tangent Name: </span> To track the transaction later on a specific Tangent,</li>
+            <ul>
+              <ul>
+                <li>Can create, add, delete Tangent,</li>
+                <li>Can select only one Tangent for each Transaction,</li>
+              </ul>
+            </ul>
+            <li><span class="inner_sub_head">Send or Revert:</span> Send or Revert transactions for editing or correction.</li>      
+          </ol>  
+        </li>
+    
+        <li class="sub-container Check_pg">
+          <h3>Check Page</h3>
+          <ul>
+            <li class="Upper">
+              <h4>Upper section: (Transaction Summary List)</h4>
+              <ul>
+                  <li>Displays a list of all transaction elements along with their total amounts.</li>
+                  <li>Provides a button to navigate to the Loan Transaction History Page for checking loan transactions.</li>
+              </ul>
+            </li>
+            <li class="Lower">
+              <h4>Lower Section: (Detailed Transaction History)</h4>
+              <ul>
+                <li>Displays a detailed history of each transaction element upon selection.</li>
+                <li>Offers the ability to select a time period (e.g., 30, 60, or 90 days) for viewing transaction history.</li>
+                <li>Provides filter options for specifying date range and transaction element.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+    
+        <li class="sub-container Loan-Overview-pg">
+          <h3>Loan Overview page</h3>
+          <ul>
+            <li class=" Upper">
+              <h4>Upper Section: (Tangents Summary List)</h4>
+              <ul>
+                <li>Lists all tangents with their corresponding total amounts left to pay and take.</li>
+              </ul>
+            </li>
+            <li class="lower">
+              <h4>Lower Section: (Detailed Tangents Transaction History)</h4>
+              <ul>
+                <li>Presents a detailed transaction history for tangents, including selection of time periods.</li>
+                <li>Offers sorting options based on transaction types and due dates.</li>
+                <li>Provides filter options for specifying date range and sorting criteria.</li>
+              </ul>
+      
+              
+            </li>
         </ul>
-        <!-- Add image here -->
-    </section>
+        </li>
+      </ol>
+    </div>
+    <div class="container Saving">
+      <h3>Saving the Transaction:</h3>
+      <p>Data stored in XML sheet named after the transaction element and present date. Where inside page sheet includes columns for [SN, Date, Keywords, Reason, Income, Expenses ].</p>
+    </div>
+  </div>
 
-    <section id="getting-started" class="zoomable">
-        <h2>Getting Started</h2>
-        <h3>Installation</h3>
-        <p>
-            Ensure that you have Python installed on your system. Clone or download the Money Manager app repository
-            from <a href="https://github.com/your-money-manager-repo">GitHub</a> and run the main Python script.
-        </p>
-        <!-- Add image here -->
-    </section>
+  <div class="section cmd">
+    <h3>Getting started with Command line Factor</h3>
+    <div class="container">
+      <h3>Run the Application</h3>
+      <p>python main.py</p>
+    </div>
+    <div class="container">
+      <h3>Welcome Message</h3>
+      <p>You'll see a welcome message and a numbered list of options representing your financial elements (e.g., Hand Cash, Bank Account Element name) With Loan & Check money Option.</p>
+    </div>
+    <div class="container">
+      <h3>Choose an Option</h3>
+      <p>Type the number corresponding to the element you want to manage and press Enter. This could be:</p>
+      <ul>
+        <li>for managing transactions related to your Element.</li>
+        <li>for managing transactions related to your Loan.</li>
+        <li>for Checking the transaction history.</li>
+      </ul>
+    </div>
+    <div class="container">
+      <h3>Entering Details</h3>
+      <p>The program will prompt you for details like:</p>
+      <ul>
+        <li>Reason: Briefly describe the purpose of the transaction. Note: Typing "ed" allows you to remove the last entered transaction in the reason field.</li>
+        <li>Amount: Enter the amount of money involved (Note: positive for income, negative for expenses).</li>
+        <li>Keywords: Add keywords by using the ‘add’ word, or select any one keyword according to the keywords needed also for multiple selections use 1,2,3 Note: select at least 2 keywords like (2,3)).</li>
+        <li>End after adding Multiple Transactions: You can keep entering transactions one after another. When finished, type "end" and press Enter.</li>
+      </ul>
+    </div>
+    <div class="container">
+      <h3>Loan Management</h3>
+      <p>Choose the "Loan" option from the main menu to manage borrowed and lent money. Here you can do:</p>
+      <ul>
+        <li>Add reason</li>
+        <li>Amount: - for given & + for Taken loan</li>
+        <li>Tangent: can select only one Tangent with the index number of a particular box like 2 for the second number tangent, to ADD type ‘add’.</li>
+        <li>Due date: just press Enter if it's for 30 days, or type a new date in the format of Year-month-date.</li>
+        <li>Transaction type: N for normal, or D for if deposited money. [Normal/Deposit]</li>
+      </ul>
+    </div>
+    <div class="container">
+      <h3>Checking Money</h3>
+      <p>Select the "Check Money" option to view your overall financial status. This displays summaries of your income, expenses, and loan balances.</p>
+    </div>
+    <div class="container">
+      <h3>Exiting the Program</h3>
+      <p>When finished, press Enter at the confirmation prompt to exit the command-line interface.</p>
+    </div>
+  </div>
 
-    <section id="functionality">
-        <h2>Functionality</h2>
+  <div class="section Conclusion">
+    <h3>Conclusion</h3>
+    <p>The Money Manager app offers a comprehensive solution for finance management, loan tracking, and transaction history review. Its user-friendly interface and robust features make it an essential tool for personal finance management.</p>
+  </div>
 
-        <section id="initial-configuration" class="zoomable">
-            <h3>Initial Configuration Page</h3>
-            <p>
-                Welcomes new users and gathers initial information.
-            </p>
-            <p>
-                Input: File location, user name, and the number of financial elements to manage money.
-            </p>
-            <p>
-                Output: User is redirected to the main page.
-            </p>
-            <!-- Add image here -->
-        </section>
+</div>
 
-        <section id="main-page" class="zoomable">
-            <h3>Main Page</h3>
-            <p>
-                Options:
-            </p>
-            <ul>
-                <li>User can select a financial element for transactions.</li>
-                <li>Options for Loan and Check transactions are available.</li>
-            </ul>
-            <!-- Add image here -->
-        </section>
-
-        <section id="element-transaction" class="zoomable">
-            <h3>Element Transaction</h3>
-            <p>
-                For Each Element (e.g., "Handcash"):
-            </p>
-            <ul>
-                <li>Interface: Separate tabs for tracking income and expenses.</li>
-                <li>Details: Reason, amount, and keywords for each transaction.</li>
-                <li>Storage: Data is stored in an XML sheet named after the transaction element and the present date.
-                </li>
-            </ul>
-            <!-- Add image here -->
-        </section>
-
-        <section id="loan-transaction" class="zoomable">
-            <h3>Loan Transaction</h3>
-            <p>
-                Loan Features:
-            </p>
-            <ul>
-                <li>Tabs: Loan Give and Loan Take.</li>
-                <li>Common Interface Elements:</li>
-                <ol>
-                    <li>Due date selector (default: present date + 30 days).</li>
-                    <li>Toggle button for Normal or Paying Back transactions.</li>
-                    <li>Entry fields for reason and amount.</li>
-                    <li>Selector box for choosing or adding a new tangent name.</li>
-                    <li>Options to send the transaction or revert.</li>
-                </ol>
-            </ul>
-            <!-- Add image here -->
-        </section>
-
-        <section id="check-page" class="zoomable">
-            <h3>Check Page</h3>
-            <p>
-                Overview:
-            </p>
-            <ul>
-                <li>Displays a list of all transaction elements with total amounts.</li>
-                <li>Provides a button to check loan transactions.</li>
-                <li>Filter options for selecting the date range and transaction element.</li>
-            </ul>
-            <!-- Add image here -->
-        </section>
-
-        <section id="loan-transaction-history" class="zoomable">
-            <h3>Loan Transaction History Page</h3>
-            <p>
-                Loan Overview:
-            </p>
-            <ul>
-                <li>Displays a list of all tangents with total amounts left to pay and left to take.</li>
-                <li>History view with options to select different time periods.</li>
-                <li>Sorting options based on all transactions, loan given, loan taken, and due date crossed.</li>
-                <li>Filter options for date range and sorting.</li>
-            </ul>
-            <!-- Add image here -->
-        </section>
-
-    </section>
-
-    <section id="conclusion" class="zoomable">
-        <h2>Conclusion</h2>
-        <p>
-            The Money Manager app provides a comprehensive solution for managing finances, tracking loans, and reviewing
-            transaction history. Its intuitive user interface and robust features make it a reliable tool for personal
-            finance management.
-        </p>
-        <!-- Add image here -->
-    </section>
-
-    <script src="main.js"></script>
 </body>
-
 </html>
